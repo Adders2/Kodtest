@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace Codetest.Model
 {
-    internal class Person
+    public class Person
     {
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
         public Address? Address { get; set; }
         public Phone? Phone { get; set; }
         public List<Family> Family { get; set; } = new List<Family>();
+
+        public Person()
+        {
+
+        }
+
+        public Person(string firstName, string lastName) : base()
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
     }
 }

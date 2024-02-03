@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Codetest.Model
 {
-    internal class Family
+    public class Family
     {
         public string Name { get; set; } = string.Empty;
         public string BirthYear { get; set; } = string.Empty;
