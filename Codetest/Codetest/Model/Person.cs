@@ -20,6 +20,12 @@ namespace Codetest.Model
 
         }
 
+        public Person (List<string> parsedRowValues)
+        {
+            FirstName = parsedRowValues[0];
+            LastName = parsedRowValues[1];
+        }
+
         public Person(string firstName, string lastName) : base()
         {
             FirstName = firstName;
