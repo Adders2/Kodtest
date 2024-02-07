@@ -39,24 +39,6 @@
       <Street>White House</Street>
       <City>Washington, D.C</City>
     </Address>
-    <Family>
-      <Family>
-        <Name>Estelle</Name>
-        <BirthYear>2012</BirthYear>
-        <Address>
-          <Street>Solliden</Street>
-          <City>�land</City>
-          <PostalCode>10002</PostalCode>
-        </Address>
-      </Family>
-      <Family>
-        <Name>Oscar</Name>
-        <BirthYear>2016</BirthYear>
-        <Phone>
-          <MobileNumber>0702-020202</MobileNumber>
-          <LandlineNumber>02-202020</LandlineNumber>
-        </Phone>
-      </Family>
-    </Family>
+    <Family />
   </Person>
 </ArrayOfPerson>

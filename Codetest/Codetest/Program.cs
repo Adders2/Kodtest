@@ -2,9 +2,6 @@
 
 using Codetest.Model;
 using Codetest.Service;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Xml.Linq;
 using System.Xml.Serialization;
 
 internal class Program
@@ -22,7 +19,7 @@ internal class Program
         var parsedPeople = converter.ParseText(text);
 
         var serializer = new XmlSerializer(typeof(List<Person>));
-        var writePath = Path.Combine(currentDir, "../../../testOutput.xml");
+        var writePath = Path.Combine(currentDir, "../../../output.xml");
         using (var writer = new StreamWriter(writePath))
         {
             serializer.Serialize(writer, parsedPeople);
