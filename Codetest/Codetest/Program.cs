@@ -2,12 +2,16 @@
 
 using Codetest.Model;
 using Codetest.Service;
+using System.Xml;
 using System.Xml.Serialization;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+        Console.WriteLine("This is a simple console app that will read the text from Example.txt, parse and output it as xml to output.xml.");
+        Console.WriteLine("Press any key to continue.");
+        Console.ReadKey();
         var currentDir = AppDomain.CurrentDomain.BaseDirectory;
         var file = Path.Combine(currentDir, "../../../Example.txt");
         var path = Path.GetFullPath(file);
@@ -25,7 +29,8 @@ internal class Program
             serializer.Serialize(writer, parsedPeople);
         }
 
-
-        Console.ReadLine();
+        Console.WriteLine("Output should now be written to output.xml.");
+        Console.WriteLine("Press any key to finish.");
+        Console.ReadKey();
     }
 }
